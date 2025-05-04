@@ -1,0 +1,28 @@
+{
+  "name": "blorkcast",
+  "version": "9.4.0",
+  "description": "A cross-platform Raycast clone",
+  "scripts": {
+    "build": "pnpm --filter blorkcast-core build && pnpm --filter blorkcast-ui build && pnpm --filter blorkcast-web build",
+    "dev": "pnpm --filter blorkcast-web dev",
+    "dev:desktop": "pnpm --filter blorkcast-desktop dev",
+    "dev:web": "pnpm --filter blorkcast-web dev",
+    "dev:docs": "pnpm --filter blorkcast-docs dev",
+    "build:desktop": "pnpm --filter blorkcast-desktop build",
+    "build:web": "pnpm --filter blorkcast-web build",
+    "build:docs": "pnpm --filter blorkcast-docs build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "keywords": [
+    "raycast",
+    "productivity",
+    "launcher"
+  ],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "pnpm": "^8.0.0"
+  }
+}
