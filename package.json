@@ -23,6 +23,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
+    "@types/electron": "^1.6.12",
     "pnpm": "^8.0.0"
   }
 }

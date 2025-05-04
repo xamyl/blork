@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Command } from '@blork/core';
+import { Command } from 'blorkcast-core';
 
 const App: React.FC = () => {
   const [query, setQuery] = useState('');

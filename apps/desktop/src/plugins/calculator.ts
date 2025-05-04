@@ -1,4 +1,5 @@
-import { Plugin, Command } from '@blork/core';
+import { Plugin } from 'blorkcast-core/dist/plugin';
+import { Command } from 'blorkcast-core';
 
 export class CalculatorPlugin extends Plugin {
   constructor() {

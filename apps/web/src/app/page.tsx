@@ -3,6 +3,9 @@
 import { Button } from '../components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
 import { User, Rocket, MonitorSmartphone, Puzzle } from 'lucide-react';
+import { Download } from 'blorkcast-ui/src/components/Download';
+import { faWindows, faApple, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
@@ -22,16 +25,17 @@ export default function Home() {
         <p className="text-2xl md:text-3xl text-gray-300 max-w-2xl mx-auto mb-8 text-center">
           A powerful, cross-platform application launcher and productivity tool
         </p>
-        <Button size="lg" className="mt-2 px-8 py-4 text-lg font-semibold shadow-xl hover:scale-105 transition-transform rounded-full">
-          <Rocket className="mr-2 w-5 h-5" /> Download for Windows
-        </Button>
+        {/* Download Section using Download component */}
+        <div className="w-full max-w-2xl mx-auto mt-4">
+          <Download />
+        </div>
       </section>
 
       {/* Features */}
       <section className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-24">
         <Card className="bg-card/80 border-none shadow-2xl hover:shadow-3xl transition-shadow">
           <CardHeader className="flex flex-col items-center text-center gap-2">
-            <MonitorSmartphone className="w-10 h-10 text-purple-400 mb-2" />
+            <FontAwesomeIcon icon={faWindows} className="w-10 h-10 text-blue-400 mb-2" />
             <CardTitle>Cross-Platform</CardTitle>
             <CardDescription>
               Available for Windows, macOS, and Linux. Your workflow stays consistent across all platforms.
@@ -40,7 +44,7 @@ export default function Home() {
         </Card>
         <Card className="bg-card/80 border-none shadow-2xl hover:shadow-3xl transition-shadow">
           <CardHeader className="flex flex-col items-center text-center gap-2">
-            <Rocket className="w-10 h-10 text-pink-400 mb-2" />
+            <FontAwesomeIcon icon={faApple} className="w-10 h-10 text-gray-300 mb-2" />
             <CardTitle>Fast & Efficient</CardTitle>
             <CardDescription>
               Launch applications and perform actions with lightning speed using our powerful search engine.
@@ -49,7 +53,7 @@ export default function Home() {
         </Card>
         <Card className="bg-card/80 border-none shadow-2xl hover:shadow-3xl transition-shadow">
           <CardHeader className="flex flex-col items-center text-center gap-2">
-            <Puzzle className="w-10 h-10 text-indigo-400 mb-2" />
+            <FontAwesomeIcon icon={faLinux} className="w-10 h-10 text-green-400 mb-2" />
             <CardTitle>Extensible</CardTitle>
             <CardDescription>
               Extend functionality with plugins. Create your own or use community-made plugins.
