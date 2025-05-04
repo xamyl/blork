@@ -10,6 +10,7 @@
   "dependencies": {
     "blorkcast-core": "9.4.0",
     "blorkcast-ui": "9.4.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.507.0",
     "next": "14.0.0",
